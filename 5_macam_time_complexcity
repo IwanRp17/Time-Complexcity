@@ -43,7 +43,7 @@ for(i=1;i<n;i++)
 hasil++;
 }
 #4. quadratic O (n²)
-#quadratic time sama seperti fungsi linear time namun perbedaan nya waktu untuk mengeksekusinya naik 2 kali lipat .
+#quadratic time fungsi nya sama seperti fungsi linear time namun perbedaan nya waktu untuk mengeksekusinya naik 2 kali lipat karena nested loop(2 perulangan).
 int quadratic(int n){
     printf("masukkan n=");
     scanf("%d",&n);
