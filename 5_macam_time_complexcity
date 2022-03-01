@@ -9,15 +9,13 @@ printf("hasil=%d",hasil);
 }
 #2.logaritmich O(log n)
 # logaritmich time adalah fungsi untuk memperpendek eksekusi dari jumlah n yang dinputkan dari user untuk mencari nilai yang diinginkan user (binary search)  
-#include <string.h>
 int logaritmich() {
 int pertama,akhir,tengah,hitung,n;
-int array[10]={10,21,25,35,36,47,58,69,72,80};
-hitung=10;
+int array[]={10,21,25,35,36,47,58,69,72,80};
+hitung=sizeof(array)/sizeof(int);
 printf("[10] [21] [25] [35] [36] [47] [58] [69] [72] [80]\n");
 printf("masukkan n yang ingin anda cari=");
 scanf("%d",&n);
-
 pertama=0;
 akhir=hitung-1;
 tengah=(pertama+akhir)/2;
@@ -26,7 +24,7 @@ while (pertama<=akhir){
         pertama=tengah+1;
     
     else if(array[tengah]==n){
-        printf("index ke=%d",tengah+1);
+        printf("index ke=%d",tengah);
         break;
     }
     else
@@ -35,16 +33,6 @@ while (pertama<=akhir){
 }
 if (pertama>akhir)
 printf("nomor yang anda pilih salah");
-}
-#3.linearO(n)
-# linear time adalah fungsi yang jumlah eksekusi nya sama dengan jumlah inputan dari user  
-int linear(){
-int n,i;
-printf("masukkan n=");
-scanf("%d",&n);
-for(i=1;i<=n;i++){
-printf("%d\n",i);
-}
 }
 #4. quadratic O (n²)
 #quadratic time fungsi nya sama seperti fungsi linear time namun perbedaan nya waktu untuk mengeksekusinya naik 2 kali lipat karena nested loop(2 perulangan).
